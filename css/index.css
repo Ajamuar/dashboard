@@ -75,9 +75,14 @@ li {
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #EDECF1;
+    display: flex;
     overflow: hidden;
     margin-top: -8px;
     margin-left: -18px;
+    position: fixed;
+    right: 0;
+    left: 210px;
+    top: 0;
 }
   
 /* Style the links inside the navigation bar */
@@ -141,12 +146,13 @@ li {
 
 /* Body */
 .content {
-    margin-top: -16px;
+    margin-top: 35px;
     margin-left: -16px;
 }
 
 .flex-container {
     list-style: none;
+    flex-wrap: wrap;
     display: flex;
 }
 
@@ -172,11 +178,14 @@ li {
 }
 
 .card {
-    width: 22%;
+    /* width: 21%; */
+    flex: auto;
     background-color: #646DD4;
     color: #8B94DB;
     margin: 20px;
     border-radius: 5px;
+    min-width: 150px;
+    max-width: 250px;
 }
 
 td.card-icon {
@@ -225,14 +234,16 @@ td.card-icon {
 }
 
 .flex-equal {
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex: auto;
 }
 
 .transaction-div {
-    width: 61%;
+    /* width: 61%; */
     padding: 22px;
     background-color: #FFFFFF;
     margin: 20px;
+    min-width: 59%;
 }
 
 .transaction-table {
@@ -275,7 +286,8 @@ td.card-icon {
     margin: 20px;
     background-color: #FFFFFF;
     padding: 20px;
-    width: 26%;
+    /* width: 26%; */
+    min-width: 100px;
 }
 
 .messages {
@@ -286,6 +298,7 @@ td.card-icon {
     margin-top: 18px;
     justify-content: flex-start;
     clear: both;
+    color: #878ABC;
 }
 
 .chat-text {
@@ -326,6 +339,12 @@ td.card-icon {
     border-radius: 5px;
     color: #FFFFFF;
     padding: 5px;
+}
+
+#chat-button {
+    background-color: #3B9891;
+    color: #ffffff;
+    padding: 10px;
 }
  
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
