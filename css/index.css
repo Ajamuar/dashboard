@@ -184,7 +184,7 @@ li {
     color: #8B94DB;
     margin: 20px;
     border-radius: 5px;
-    min-width: 150px;
+    min-width: 250px;
     max-width: 250px;
 }
 
@@ -249,6 +249,7 @@ td.card-icon {
 
 .transaction-table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -361,6 +362,7 @@ td.card-icon {
 
 @media screen and (max-width: 785px) {
     .chat {width: 100%}
+    .transaction-div {width: 100%}
 }
 
 @media screen and (max-width: 730px) {
