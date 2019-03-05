@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard</title>
     </head>
@@ -35,10 +36,10 @@
                         </button>
                     </div> 
                 </a>
-                <span class="right-floating" style="margin-left: auto"><a><input id="input" type="text" placeholder="Search"></a></span>
-                <span class="right-floating"><a class="icon"><i class="fas fa-bell"></i></a></span>
+                <span class="right-floating" style="margin-left: auto"><a><span id="search-bar"><input id="input" type="text" placeholder="Search"><i class="fas fa-search"></i></span></a></span>
                 <span class="right-floating"><a class="icon"><i class="fas fa-expand"></i></a></span>
-                <span class="right-floating"><a class="icon"><img src="./images/profile-icon-9.png" width="20px" height="20px"></a></span>
+                <span class="right-floating"><a class="icon"><i class="fas fa-bell"></i></a></span>
+                <span class="right-floating"><a class="icon"><img src="./images/pbox.gif" width="20px" height="20px"></a></span>
             </div>
 
             <!-- Body -->
@@ -65,11 +66,11 @@
                                             <i class="fas fa-clipboard-list"></i>
                                         </td>
                                         <td class="card-content left-card-content"><small>ORDER</small></td>
-                                        <td class="card-content right-card-content green white">+12%</td>
+                                        <td class="card-content right-card-content green white inline"><div class="arrow-right"></div>+12%</td>
                                     </tr>
                                     <tr>
                                         <td class="card-content left-card-content white"><span class="price">1,685</span></td>
-                                        <td class="card-content right-arrow-icon"><i class="fas fa-long-arrow-alt-up"></i></td>
+                                        <td class="card-content right-arrow-icon" style="color: #29A6A0;"><i class="fas fa-long-arrow-alt-up"></i></td>
                                     </tr>
                                 </table>
                             </div>
@@ -93,41 +94,12 @@
                                         <td rowspan="2" class="card-icon">
                                             <i class="far fa-sticky-note"></i>
                                         </td>
-                                        <td class="card-content left-card-content"><small>ORDER</small></td>
-                                        <td class="card-content right-card-content green white">+12%</td>
+                                        <td class="card-content left-card-content"><small>REVENUE</small></td>
+                                        <td class="card-content right-card-content red white inline"><div class="arrow-right"></div>-38%</td>
                                     </tr>
                                     <tr>
-                                        <td class="card-content left-card-content white"><span class="price">1,685</span></td>
-                                        <td class="card-content right-arrow-icon"><i class="fas fa-long-arrow-alt-up"></i></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="min-row">
-                                <table width="100%" class="lower-table">
-                                    <tr>
-                                        <td>
-                                            Since last month
-                                        </td>
-                                        <td class="right-card-content">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="min-row">
-                                <table>
-                                    <tr>
-                                        <td rowspan="2" class="card-icon">
-                                            <i class="fas fa-clipboard-list"></i>
-                                        </td>
-                                        <td class="card-content left-card-content"><small>ORDER</small></td>
-                                        <td class="card-content right-card-content green white">+12%</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="card-content left-card-content white"><span class="price">1,685</span></td>
-                                        <td class="card-content right-arrow-icon"><i class="fas fa-long-arrow-alt-up"></i></td>
+                                        <td class="card-content left-card-content white"><span class="price">52,368</span></td>
+                                        <td class="card-content right-arrow-icon" style="color: #ED3857"><i class="fas fa-long-arrow-alt-down"></i></td>
                                     </tr>
                                 </table>
                             </div>
@@ -151,12 +123,41 @@
                                         <td rowspan="2" class="card-icon">
                                             <i class="fas fa-clipboard-list"></i>
                                         </td>
-                                        <td class="card-content left-card-content"><small>ORDER</small></td>
-                                        <td class="card-content right-card-content green white">+12%</td>
+                                        <td class="card-content left-card-content"><small>AVERAGE PRICE</small></td>
+                                        <td class="card-content right-card-content blue white inline"><div class="arrow-right"></div>00%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-content left-card-content white"><span class="price">15.8</span></td>
+                                        <td class="card-content right-arrow-icon" style="color: #29A6A0;"><i class="fas fa-long-arrow-alt-up"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="min-row">
+                                <table width="100%" class="lower-table">
+                                    <tr>
+                                        <td>
+                                            Since last month
+                                        </td>
+                                        <td class="right-card-content">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="min-row">
+                                <table>
+                                    <tr>
+                                        <td rowspan="2" class="card-icon">
+                                            <i class="fas fa-clipboard-list"></i>
+                                        </td>
+                                        <td class="card-content left-card-content"><small>PRODUCT</small></td>
+                                        <td class="card-content right-card-content yellow white inline"><div class="arrow-right"></div>+84%</td>
                                     </tr>
                                     <tr>
                                         <td class="card-content left-card-content white"><span class="price">1,685</span></td>
-                                        <td class="card-content right-arrow-icon"><i class="fas fa-long-arrow-alt-up"></i></td>
+                                        <td class="card-content right-arrow-icon" style="color: #29A6A0;"><i class="fas fa-long-arrow-alt-up"></i></td>
                                     </tr>
                                 </table>
                             </div>
@@ -191,7 +192,7 @@
                                 <tbody>
                                     <tr>
                                         <th>#14256</th>
-                                        <td class="list-icon"><img src="./images/profile-icon-9.png" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
+                                        <td class="list-icon"><img src="./images/pbox.gif" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
                                         <td>15/1/2018</td>
                                         <td>$94</td>
                                         <td><small class="delivered">Delivered</small></td>
@@ -199,7 +200,15 @@
                                     </tr>
                                     <tr>
                                         <th>#14256</th>
-                                        <td class="list-icon"><img src="./images/profile-icon-9.png" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
+                                        <td class="list-icon"><img src="./images/pbox.gif" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
+                                        <td>15/1/2018</td>
+                                        <td>$94</td>
+                                        <td><small class="pending">Pending</small></td>
+                                        <td><button class="table-button">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>#14256</th>
+                                        <td class="list-icon"><img src="./images/pbox.gif" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
                                         <td>15/1/2018</td>
                                         <td>$94</td>
                                         <td><small class="delivered">Delivered</small></td>
@@ -207,23 +216,15 @@
                                     </tr>
                                     <tr>
                                         <th>#14256</th>
-                                        <td class="list-icon"><img src="./images/profile-icon-9.png" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
+                                        <td class="list-icon"><img src="./images/pbox.gif" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
                                         <td>15/1/2018</td>
                                         <td>$94</td>
-                                        <td><small class="delivered">Delivered</small></td>
+                                        <td><small class="cancel">Cancel</small></td>
                                         <td><button class="table-button">Edit</button></td>
                                     </tr>
                                     <tr>
                                         <th>#14256</th>
-                                        <td class="list-icon"><img src="./images/profile-icon-9.png" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
-                                        <td>15/1/2018</td>
-                                        <td>$94</td>
-                                        <td><small class="delivered">Delivered</small></td>
-                                        <td><button class="table-button">Edit</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th>#14256</th>
-                                        <td class="list-icon"><img src="./images/profile-icon-9.png" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
+                                        <td class="list-icon"><img src="./images/pbox.gif" class="icon" width="20px" height="20px" /> <span class="text-pos">Philip Smead</span></td>
                                         <td>15/1/2018</td>
                                         <td>$94</td>
                                         <td><small class="delivered">Delivered</small></td>
@@ -236,40 +237,56 @@
                             <b>Chat</b>
                             <div class="messages">
                                 <div class="flex-container message">
-                                    <img src="./images/profile-icon-9.png" width="30px" height="30px">
-                                    <div class="chat-text">
+                                    <div>
+                                        <img src="./images/pbox.gif" width="30px" height="30px">
+                                        <br>
+                                        <small class="text-msg" style="color: black">10:00</small>
+                                    </div>
+                                    <div class="chat-text blue-bg">
                                         <span class="user">John Deo</span>
                                         <br>
                                         <span class="text-msg">Hello!</span>
                                     </div>
                                 </div>
                                 <div class="flex-container message right-msg">
-                                    <div class="chat-text">
+                                    <div class="chat-text grey-bg">
                                         <span class="user">Smith</span>
                                         <br>
                                         <span class="text-msg">Hi, How are you? What about out</span><br>
                                         <span class="text-msg">next meeting?</span>
                                     </div>
-                                    <img src="./images/profile-icon-9.png" width="30px" height="30px">
+                                    <div>
+                                        <img src="./images/pbox.gif" width="30px" height="30px">
+                                        <br>
+                                        <small class="text-msg" style="color: black">10:01</small>
+                                    </div>
                                 </div>
                                 <div id="message-id" class="flex-container message">
-                                    <img src="./images/profile-icon-9.png" width="30px" height="30px">
-                                    <div class="chat-text">
+                                    <div>
+                                        <img src="./images/pbox.gif" width="30px" height="30px">
+                                        <br>
+                                        <small class="text-msg" style="color: black">10:04</small>
+                                    </div>
+                                    <div class="chat-text blue-bg">
                                         <span class="user">John Deo</span>
                                         <br>
                                         <span class="text-msg">Yeah everything is fine</span>
                                     </div>
                                 </div>
                                 <div class="flex-container message right-msg">
-                                    <div class="chat-text">
+                                    <div class="chat-text grey-bg">
                                         <span class="user">Smith</span>
                                         <br>
                                         <span class="text-msg">Wow, That's great.</span>
                                     </div>
-                                    <img src="./images/profile-icon-9.png" width="30px" height="30px">
+                                    <div>
+                                        <img src="./images/pbox.gif" width="30px" height="30px">
+                                        <br>
+                                        <small class="text-msg" style="color: black">10:05</small>
+                                    </div>
                                 </div>
                                 <div class="flex-container" id="chat-input">
-                                    <input placeholder="Enter your text" style="width: 80%">
+                                    <input placeholder=" Enter your text" style="width: 80%; border-radius: 5px;">
                                     <button id="chat-button">Send</button>
                                 </div>
                             </div>
