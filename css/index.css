@@ -426,6 +426,19 @@ td.card-icon {
     color: #ffffff;
     padding: 10px;
 }
+
+.hide-sidebar .sidenav {
+    display: none;
+}
+
+.hide-sidebar .main {
+    margin-left: 0px;
+}
+
+.hide-sidebar .topnav {
+    left: 0;
+    padding-left: 10px;
+}
  
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -443,17 +456,25 @@ td.card-icon {
     .transaction-div {width: 100%}
 }
 
-@media screen and (max-width: 730px) {
+/* @media screen and (max-width: 730px) {
     .sidenav {display: none}
     .main {
         margin-left: 0px;
     }
     .topnav {
         left: 0;
-    }
-}
+        padding-left: 10px;
+    } */
+/* } */
 
 /* .transaction-div, .chat{
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+} */
+
+/* .sidenav {
     -webkit-transition:all 1s ease;
          -moz-transition:all 1s ease;
                -o-transition:all 1s ease;
