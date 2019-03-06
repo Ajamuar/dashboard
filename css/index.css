@@ -246,6 +246,10 @@ td.card-icon {
     border-top: 15px solid #EFF0F4;
 }
 
+.ribbon {
+    left: 12px;
+}
+
 .left-down-arrow {
     left: -24px;
     border-top: 15px solid #E1E2FD;
