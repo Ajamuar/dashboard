@@ -240,6 +240,37 @@ td.card-icon {
     position: relative;
 }
 
+.right-down-arrow {
+    left: 31px;
+    top: -4px;
+    border-top: 15px solid #EFF0F4;
+}
+
+.left-down-arrow {
+    left: -24px;
+    border-top: 15px solid #E1E2FD;
+    top: -4px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+  }
+
+/* .chat-right-arrow {
+  width: 0; 
+  height: 0; 
+  position: relative;    
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 2;
+  left: 3px;
+  border-left: 20px solid #EFF0F4; */
+/* } */
+
 .arrow-right {
   width: 0; 
   height: 0; 
@@ -381,6 +412,7 @@ td.card-icon {
 
 .user {
     font-size: 15px;
+    position: relative;
 }
 
 .text-msg {
